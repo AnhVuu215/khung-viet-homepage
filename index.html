@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Khung Việt — Mỗi khung hình, một miền trải nghiệm. Khám phá bảy lát cắt sống động của Việt Nam.">
+  <title>Khung Việt — Việt Nam qua từng khung hình</title>
+  <script>try{if(localStorage.getItem("khung-viet-theme")==="projector")document.documentElement.dataset.theme="projector"}catch{}</script>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23071411'/%3E%3Cg fill='none' stroke-linecap='square'%3E%3Cpath d='M7 19V7h12M45 7h12v12M57 45v12H45M19 57H7V45' stroke='%23c9f45b' stroke-width='3'/%3E%3Cpath d='M18 16v36M18 34 37 16M18 34l19 18M37 16l10 36L57 16' stroke='%23f4f6ef' stroke-width='4'/%3E%3Ccircle cx='54' cy='13' r='4' fill='%23ff704d' stroke='none'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=footer-balance-3">
+  <script src="script.js?v=homepage-2" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#story">Đến nội dung chính</a>
+<header class="topbar">
+  <a class="brand" href="#home" aria-label="Khung Việt — Trang đầu">
+    <span class="brand-mark" aria-hidden="true"><i></i><svg viewBox="0 0 96 86"><path class="frame" d="M9 25V9h16M71 9h16v16M87 61v16H71M25 77H9V61"/><path class="monogram" d="M25 19v48M25 44 50 19M25 44l25 23M50 19l18 48 18-48"/><path class="journey" d="M13 64C31 48 47 55 62 43c7-6 11-13 20-20"/><circle cx="84" cy="20" r="5"/></svg></span>
+    <span class="brand-type"><strong><span class="brand-initial">K</span><span>HUNG </span><span class="brand-initial">V</span><span>IỆT</span></strong><small>QUA TỪNG KHUNG HÌNH</small></span>
+  </a>
+  <nav aria-label="Điều hướng chính"><a href="#home">Khám phá</a><a href="#story">Câu chuyện</a><a href="#tours">Tour</a><a href="#collection">Điểm đến</a><a href="#services">Dịch vụ</a></nav>
+  <div class="topbar-actions">
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Bật chế độ trình chiếu" title="Đổi chế độ màu"><span class="theme-icon" aria-hidden="true">☀</span><span id="theme-label">Trình chiếu</span></button>
+    <a class="button button-lime" href="#contact">Lên lịch đi <span aria-hidden="true">↗</span></a>
+  </div>
+</header>
+<main>
+  <section class="experience" id="home" aria-label="Bộ sưu tập điểm đến">
+    <div class="hero-images" id="hero-images"><img class="active" src="assets/halong-hero.png" alt="Vịnh Hạ Long trong ánh bình minh" fetchpriority="high"></div>
+    <div class="hero-shade"></div>
+    <div class="hero-topline"><span>THE VIETNAM COLLECTION</span><span>EST. 2026 / VOL. 01</span></div>
+    <div class="hero-copy">
+      <p class="eyebrow" id="hero-kicker">01 / HẠ LONG · BÌNH MINH TRÊN VỊNH</p>
+      <h1 id="hero-title">ĐI ĐỂ CẢM.<br><em>KHÔNG CHỈ ĐỂ ĐẾN.</em></h1>
+      <p id="hero-description">Có những buổi sớm, chỉ cần đứng yên.<br>Để cả một vùng đất bước vào lòng mình.</p>
+      <div class="hero-links"><a class="button button-lime" href="#story">Bắt đầu câu chuyện <span aria-hidden="true">↓</span></a><button class="text-button" id="open-story"><span class="play-icon" aria-hidden="true">▷</span> Xem chuyện bằng ảnh</button></div>
+    </div>
+    <button class="preview-card" id="preview-card" aria-label="Khám phá điểm đến tiếp theo">
+      <img id="next-image" src="assets/fansipan.webp" alt="Đỉnh Fansipan giữa biển mây">
+      <span class="preview-top">CHƯƠNG TIẾP THEO <span aria-hidden="true">↗</span></span>
+      <span class="preview-bottom"><small id="next-number">02 / 07</small><strong id="next-title">FANSIPAN</strong><span id="next-caption">Phía trên những tầng mây.</span></span>
+    </button>
+    <div class="hero-bottom">
+      <div class="destination-label"><span id="destination-number">01</span><div><h2 id="destination-title">HẠ LONG</h2><p id="destination-region">QUẢNG NINH / MIỀN BẮC</p></div></div>
+      <div class="slideshow-controls" role="group" aria-label="Điều khiển ảnh điểm đến"><button id="previous" aria-label="Điểm đến trước">←</button><span id="slide-count">01 / 07</span><button id="next" aria-label="Điểm đến sau">→</button><button id="pause" aria-label="Tạm dừng trình chiếu" aria-pressed="false">Ⅱ</button></div>
+      <div class="hero-thumbs" id="hero-thumbs" aria-label="Chọn điểm đến"></div>
+    </div>
+    <div class="slide-progress"><span id="slide-progress"></span></div>
+    <div class="flying-plane" id="flying-plane" aria-hidden="true">✈</div>
+  </section>
+
+  <section class="story section-wrap" id="story" aria-labelledby="story-title">
+    <header class="section-heading"><p class="eyebrow">FIELD NOTES / NHỮNG ĐIỀU MANG VỀ</p><h2 id="story-title">Mỗi vùng đất.<br><em>Một điều ở lại.</em></h2><p>Không phải một danh sách để đánh dấu.<br>Là những khoảnh khắc để nhớ thật lâu.</p></header>
+    <div class="story-layout">
+      <div class="story-visual"><div class="story-photo-stack" id="story-photos"></div><div class="story-photo-caption"><span id="story-photo-number">01 / 03</span><strong id="story-photo-title">HÀ GIANG</strong><span>NHẬT KÝ CỦA NHỮNG BƯỚC CHÂN</span></div></div>
+      <div class="chapters">
+        <article class="chapter active" data-chapter="0"><span class="chapter-number">01 — ĐI XA</span><h3>Đường càng xa.<br>Lòng càng rộng.</h3><p>Giữa hai vách núi, Nho Quế xanh như một nét mực. Có những khúc quanh khiến ta thôi nhìn đồng hồ, chỉ muốn nhìn thật lâu.</p><p class="chapter-note">Hà Giang · Một khoảng lặng giữa cao nguyên đá</p><a href="#contact" data-choose="2">Tôi muốn đến Hà Giang <span aria-hidden="true">↗</span></a></article>
+        <article class="chapter" data-chapter="1"><span class="chapter-number">02 — NHÌN KHÁC</span><h3>Thế giới lớn hơn<br>những gì ta biết.</h3><p>Một vệt nắng rơi vào lòng hang. Cây cối vươn lên giữa đá. Đứng trước Sơn Đoòng, ta bỗng thấy mình nhỏ lại — và sự tò mò lớn lên.</p><p class="chapter-note">Sơn Đoòng · Cảm hứng khám phá, không phải tour đại trà</p><a href="#contact" data-choose="4">Lưu cảm hứng Sơn Đoòng <span aria-hidden="true">↗</span></a></article>
+        <article class="chapter" data-chapter="2"><span class="chapter-number">03 — MANG VỀ</span><h3>Một vệt nắng vàng.<br>Một miền nhớ lâu.</h3><p>Mái ngói cũ, bức tường vàng, dòng sông chậm. Hội An không giữ chân bằng sự vội vã. Nơi này cho ta một lý do để nán lại.</p><p class="chapter-note">Hội An · Chiều xuống bên dòng Hoài</p><a href="#contact" data-choose="5">Hẹn một chiều ở Hội An <span aria-hidden="true">↗</span></a></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured-tours" id="tours" aria-labelledby="tours-title">
+    <div class="section-wrap">
+      <header class="tours-heading"><div><p class="eyebrow">CURATED JOURNEYS / HÀNH TRÌNH TUYỂN CHỌN</p><h2 id="tours-title">Ba cách để<br><em>chạm vào Việt Nam.</em></h2></div><p>Nhóm nhỏ, nhịp đi vừa đủ và nhiều khoảng trống để thật sự nhìn thấy nơi mình đến.</p></header>
+      <div class="tour-grid">
+        <article class="tour-card tour-card-featured"><img loading="lazy" src="assets/hagiang-story.jpg" alt="Sông Nho Quế giữa cao nguyên đá Hà Giang"><div class="tour-overlay"><span class="tour-index">01 / MIỀN NÚI</span><h3>Chạm vào<br>miền đá</h3><p>Hà Giang · Đồng Văn · Nho Quế</p><div class="tour-meta"><span>4 ngày 3 đêm</span><span>Từ 4.890.000đ*</span></div><a href="#contact" data-choose="2">Xem hành trình <span aria-hidden="true">↗</span></a></div></article>
+        <article class="tour-card"><img loading="lazy" src="assets/trang-an.webp" alt="Non nước Tràng An xanh mát"><div class="tour-overlay"><span class="tour-index">02 / DI SẢN</span><h3>Theo dòng<br>di sản</h3><p>Tràng An · Cố đô Hoa Lư</p><div class="tour-meta"><span>3 ngày 2 đêm</span><span>Từ 3.690.000đ*</span></div><a href="#contact" data-choose="3">Xem hành trình <span aria-hidden="true">↗</span></a></div></article>
+        <article class="tour-card"><img loading="lazy" src="assets/danang.jpg" alt="Biển xanh và hàng dừa Đà Nẵng"><div class="tour-overlay"><span class="tour-index">03 / MIỀN BIỂN</span><h3>Nghe biển<br>kể chuyện</h3><p>Đà Nẵng · Hội An</p><div class="tour-meta"><span>4 ngày 3 đêm</span><span>Từ 5.290.000đ*</span></div><a href="#contact" data-choose="6">Xem hành trình <span aria-hidden="true">↗</span></a></div></article>
+      </div>
+      <p class="demo-note">* Giá và lịch trình minh họa phục vụ bài tập, chưa phải thông tin mở bán.</p>
+    </div>
+  </section>
+
+  <section class="collection section-wrap" id="collection" aria-labelledby="collection-title">
+    <header class="collection-heading"><div><p class="eyebrow">CHOOSE YOUR NEXT CHAPTER</p><h2 id="collection-title">Bạn muốn cảm thấy <em>điều gì?</em></h2></div><p>Bảy điểm đến. Chọn một nơi<br>để bắt đầu câu chuyện của bạn.</p></header>
+    <div class="collection-route" aria-hidden="true"><span>KHỞI HÀNH</span><div><i id="route-plane">✈</i></div><span>ĐIỀU ĐANG ĐỢI</span></div>
+    <div class="destination-grid" id="destination-grid"></div>
+    <p class="collection-note">Đây là bộ sưu tập điểm đến độc lập, không phải lịch trình ghép cả bảy nơi trong một tour.</p>
+  </section>
+
+  <section class="services" id="services" aria-labelledby="services-title"><div class="section-wrap">
+    <header class="services-heading"><p class="eyebrow">TRAVEL, MADE PERSONAL</p><h2 id="services-title">Đi có người đồng hành.<br><em>Vẫn là chuyến đi của bạn.</em></h2></header>
+    <div class="service-grid">
+      <article><span>01</span><b aria-hidden="true">⌁</b><h3>Thiết kế theo yêu cầu</h3><p>Điểm đến, nhịp độ và trải nghiệm được chọn theo cách bạn muốn tận hưởng.</p></article>
+      <article><span>02</span><b aria-hidden="true">◎</b><h3>Người dẫn đường bản địa</h3><p>Những câu chuyện nhỏ và góc nhìn chỉ người sống tại vùng đất ấy mới biết.</p></article>
+      <article><span>03</span><b aria-hidden="true">↗</b><h3>Nhóm nhỏ, trải nghiệm sâu</h3><p>Ít người hơn để hành trình linh hoạt, gần gũi và giữ được khoảng riêng.</p></article>
+      <article><span>04</span><b aria-hidden="true">24</b><h3>Đồng hành xuyên chuyến đi</h3><p>Một đầu mối hỗ trợ từ lúc lên ý tưởng đến khi bạn trở về nhà.</p></article>
+    </div>
+  </div></section>
+
+  <section class="brand-film section-wrap" id="film" aria-labelledby="film-title">
+    <div class="film-poster"><img loading="lazy" src="assets/fansipan.webp" alt="Đỉnh Fansipan giữa biển mây"><div class="film-shade"></div><div class="film-copy"><p class="eyebrow">A FILM BY KHUNG VIỆT · 00:60</p><h2 id="film-title">Việt Nam<br><em>trong một phút.</em></h2><button class="film-play" id="open-film" type="button"><span aria-hidden="true">▶</span><b>Xem phim giới thiệu</b><small>Bản dựng hình ảnh demo</small></button></div><span class="film-coordinate">22.3033° N<br>103.7755° E</span></div>
+  </section>
+
+  <section class="voices" aria-labelledby="voices-title"><div class="section-wrap">
+    <header class="voices-heading"><p class="eyebrow">TRAVEL NOTES / NỘI DUNG MINH HỌA</p><h2 id="voices-title">Những điều<br><em>người đi mang về.</em></h2></header>
+    <div class="voice-grid">
+      <figure><blockquote>“Không phải chạy theo lịch trình. Chúng tôi có thời gian ngồi bên Nho Quế và thật sự cảm nhận Hà Giang.”</blockquote><figcaption><span>TA</span><p><strong>Thu Anh</strong><small>Hành trình miền đá · Minh họa</small></p></figcaption></figure>
+      <figure><blockquote>“Điều mình nhớ nhất không phải một địa danh, mà là buổi chiều đạp xe thật chậm qua những con phố vàng.”</blockquote><figcaption><span>MN</span><p><strong>Minh Ngọc</strong><small>Theo dòng di sản · Minh họa</small></p></figcaption></figure>
+      <figure><blockquote>“Mọi thứ vừa đủ chỉn chu nhưng vẫn có khoảng tự do. Chuyến đi có cảm giác rất riêng của nhóm mình.”</blockquote><figcaption><span>HP</span><p><strong>Hoàng Phúc</strong><small>Nghe biển kể chuyện · Minh họa</small></p></figcaption></figure>
+    </div>
+  </div></section>
+
+  <section class="manifesto" id="about"><div class="section-wrap"><p class="eyebrow">TINH THẦN KHUNG VIỆT</p><h2>ĐI ÍT ĐIỂM HƠN.<br><span>CẢM NHIỀU HƠN.</span></h2><div class="manifesto-bottom"><p>Một cuộc trò chuyện. Một món ăn lạ. Một buổi chiều không cần kế hoạch. Khung Việt tin rằng điều đáng nhớ nhất đôi khi nằm ngoài lịch trình.</p><span>CHẬM LẠI.<br>NHÌN SÂU HƠN.</span><a href="#contact" aria-label="Lên lịch cho hành trình của bạn">↗</a></div></div></section>
+
+  <section class="contact section-wrap" id="contact" aria-labelledby="contact-title"><div class="contact-intro"><p class="eyebrow">YOUR NEXT DEPARTURE</p><h2 id="contact-title">Chuyến đi mới.<br><em>Bắt đầu từ bạn.</em></h2><p>Chọn nơi bạn muốn đến.<br>Giữ lại một lời hẹn với chính mình.</p></div>
+    <form id="trip-form" class="boarding-pass">
+      <div class="ticket-header"><span>KHUNG VIỆT / THẺ HÀNH TRÌNH</span><span class="ticket-code">KV · <b id="ticket-code">0001</b></span><span class="ticket-kv" aria-hidden="true">KV<span>•</span></span></div>
+      <div class="ticket-fields"><label>Điểm đến<select id="trip-destination" name="destination" required></select></label><label>Ngày dự kiến<input id="trip-date" name="date" type="date" required></label><label>Số người<input id="trip-guests" name="guests" type="number" min="1" max="20" value="2" required></label><label>Tên của bạn<input id="trip-name" name="name" placeholder="Bạn muốn được gọi là…" maxlength="60" autocomplete="given-name" required></label></div>
+      <div class="ticket-stub"><p>Bản demo học tập · Không đặt chỗ, không thanh toán.<br>Thông tin chỉ dùng trên trang này, không gửi đi.</p><button class="button button-dark" type="submit">Tạo thẻ hành trình <span aria-hidden="true">↗</span></button></div>
+      <div id="trip-result" class="trip-result" role="status" hidden><h3>Đã tạo thẻ hành trình của bạn.</h3><p id="trip-summary"></p><button id="download-trip" class="text-button" type="button">Tải thẻ về máy ↓</button></div>
+    </form>
+  </section>
+</main>
+<footer class="site-footer"><div class="section-wrap footer-main"><div class="footer-identity"><a class="footer-brand" href="#home">KHUNG VIỆT<span>•</span></a><p>Việt Nam qua từng khung hình.<br>Mỗi hành trình, một câu chuyện để mang về.</p></div><div><strong>KHÁM PHÁ</strong><a href="#story">Câu chuyện</a><a href="#tours">Tour tuyển chọn</a><a href="#collection">Điểm đến</a></div><div><strong>ĐỒNG HÀNH</strong><a href="#services">Dịch vụ</a><a href="#film">Phim giới thiệu</a><a href="#contact">Tạo hành trình</a></div><div><strong>LIÊN HỆ MINH HỌA</strong><span>hello@khungviet.vn</span><span>+84 24 0000 2026</span><span>Hà Nội, Việt Nam</span></div></div><div class="section-wrap footer-bottom"><span>© 2026 Khung Việt · Website bài tập</span><span>Mỗi khung hình, một miền trải nghiệm</span><a href="#home">Về đầu trang ↑</a></div></footer>
+<dialog id="story-dialog" aria-labelledby="dialog-title"><button id="close-dialog" class="dialog-close" aria-label="Đóng câu chuyện">×</button><img id="dialog-image" src="assets/halong-hero.png" alt=""><div class="dialog-copy"><p class="eyebrow" id="dialog-count">01 / 07</p><h2 id="dialog-title">HẠ LONG</h2><p id="dialog-description"></p><div class="dialog-controls"><button id="dialog-prev" aria-label="Ảnh trước">←</button><span>CHUYỆN KỂ BẰNG ẢNH</span><button id="dialog-next" aria-label="Ảnh sau">→</button></div></div></dialog>
+<dialog id="film-dialog" class="film-dialog" aria-labelledby="film-dialog-title"><button id="close-film" class="dialog-close" aria-label="Đóng phim giới thiệu">×</button><div class="film-stage"><img id="film-frame" src="assets/halong-hero.png" alt="Vịnh Hạ Long trong ánh bình minh"><div class="film-stage-shade"></div><div class="film-stage-copy"><p id="film-count">01 / 07</p><h2 id="film-dialog-title">VIỆT NAM<br>QUA TỪNG KHUNG HÌNH.</h2><span id="film-caption">Bắt đầu từ một bình minh.</span></div><div class="film-progress"><i id="film-progress"></i></div></div><div class="film-controls"><button id="film-toggle" type="button" aria-label="Tạm dừng phim">Ⅱ</button><span>PHIM ẢNH DEMO · VIDEO THẬT SẼ ĐƯỢC THAY KHI CÓ TỆP</span><button id="film-next" type="button" aria-label="Khung hình tiếp theo">→</button></div></dialog>
+<noscript><p class="section-wrap">Bật JavaScript để chuyển ảnh và tạo thẻ hành trình. Bạn vẫn có thể đọc câu chuyện và xem ảnh trên trang.</p></noscript>
+</body>
+</html>

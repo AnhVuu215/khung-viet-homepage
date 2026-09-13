@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 86" role="img" aria-labelledby="title desc">
+  <title id="title">Khung Việt</title>
+  <desc id="desc">Biểu tượng chữ K và V trong một khung mở, được nối bởi đường hành trình</desc>
+  <rect width="430" height="86" rx="8" fill="#071411"/>
+  <g fill="none" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M9 25V9h16M73 9h16v16M89 61v16H73M25 77H9V61" stroke="#c9f45b" stroke-width="3"/>
+    <path d="M25 19v48M25 44 50 19M25 44l25 23M50 19l18 48 18-48" stroke="#f4f6ef" stroke-width="6"/>
+    <path d="M13 64C31 48 47 55 62 43c7-6 11-13 20-20" stroke="#c9f45b" stroke-width="2" stroke-dasharray="2 7"/>
+    <circle cx="84" cy="20" r="5" fill="#ff704d" stroke="none"/>
+  </g>
+  <g fill="#f4f6ef" font-family="Arial Narrow, Arial, sans-serif">
+    <text x="112" y="47" font-size="36" font-weight="700" letter-spacing="5">KHUNG VIỆT</text>
+    <text x="114" y="68" font-size="10" font-weight="700" letter-spacing="3.2" fill="#c9f45b">VIỆT NAM QUA TỪNG KHUNG HÌNH</text>
+  </g>
+</svg>
