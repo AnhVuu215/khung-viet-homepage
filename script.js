@@ -136,7 +136,7 @@ const dialog=$("#story-dialog");
 function renderDialog(){
   const item=destinations[modalIndex];
   $("#dialog-image").src=item.image;$("#dialog-image").alt=item.alt;
-  $("#dialog-title").textContent=item.title;$("#dialog-description").textContent=item.description;
+  $("#dialog-title").textContent=item.title;$("#dialog-region").textContent=item.region;$("#dialog-description").textContent=item.description;
   $("#dialog-count").textContent=number(modalIndex)+" / 07";
 }
 function openDialog(index){modalIndex=index;renderDialog();dialog.showModal();document.body.style.overflow="hidden";schedule();}
